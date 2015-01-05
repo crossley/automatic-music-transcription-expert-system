@@ -1,0 +1,28 @@
+{
+    IBClasses = (
+        {
+            CLASS = CCLabelsView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                pitchTextField = id; 
+                songInfoTextFields = NSMatrix; 
+                tempoTextFiled = NSTextField; 
+            }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            CLASS = CControllerAndBridge; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {labelsView = NSView; myWindow = NSWindow; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {toggleFullScreen = id; }; 
+            CLASS = JCFullScreenWindow; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSWindow; 
+        }
+    ); 
+    IBVersion = 1; 
+}

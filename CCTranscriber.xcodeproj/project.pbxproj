@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B3A80540A3E39A6005DAA52 /* neuron.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A804E0A3E39A6005DAA52 /* neuron.cc */; };
+		0B3A80550A3E39A6005DAA52 /* nnwork.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A80500A3E39A6005DAA52 /* nnwork.cc */; };
+		0B3A80560A3E39A6005DAA52 /* Peak.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A80520A3E39A6005DAA52 /* Peak.cpp */; };
+		0B3A80590A3E3A13005DAA52 /* CChordFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A80580A3E3A13005DAA52 /* CChordFinder.cpp */; };
+		0B3A806C0A3E3B7A005DAA52 /* Peak.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A80530A3E39A6005DAA52 /* Peak.h */; };
+		0B3A806D0A3E3B9A005DAA52 /* CChordFinder.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A80570A3E3A13005DAA52 /* CChordFinder.h */; };
+		0B542E5B0A3F031700BAC71E /* CCSegmentFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B542E5A0A3F031700BAC71E /* CCSegmentFinder.cpp */; };
+		0B542E5C0A3F034B00BAC71E /* CCSegmentFinder.h in Sources */ = {isa = PBXBuildFile; fileRef = 0B542E590A3F031700BAC71E /* CCSegmentFinder.h */; };
+		0BBB6C780A2230EB00A2B25E /* CCLabelsView.h in Sources */ = {isa = PBXBuildFile; fileRef = 21D17AF60A1A2DD3006726AE /* CCLabelsView.h */; };
+		0BBB6C790A2230EB00A2B25E /* CCLabelsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D17AF70A1A2DD3006726AE /* CCLabelsView.m */; };
+		0BBB6C7A0A2230EB00A2B25E /* JCSpectrumView.h in Sources */ = {isa = PBXBuildFile; fileRef = 2161F3EF0A11CC310025062F /* JCSpectrumView.h */; };
+		0BBB6C7B0A2230EB00A2B25E /* JCSpectrumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2161F3F00A11CC310025062F /* JCSpectrumView.m */; };
+		0BBB6C7C0A2230EB00A2B25E /* JCWaveformView.h in Sources */ = {isa = PBXBuildFile; fileRef = 2161F1980A110E9E0025062F /* JCWaveformView.h */; };
+		0BBB6C7D0A2230EB00A2B25E /* JCWaveformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2161F1990A110E9E0025062F /* JCWaveformView.m */; };
+		0BBB6C7E0A2230EB00A2B25E /* JCFullScreenWindow.h in Sources */ = {isa = PBXBuildFile; fileRef = 21F2B62F0A10809700772A0C /* JCFullScreenWindow.h */; };
+		0BBB6C7F0A2230EB00A2B25E /* JCFullScreenWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F2B6300A10809800772A0C /* JCFullScreenWindow.m */; };
+		0BBB6C800A2230EB00A2B25E /* JCGraphView.h in Sources */ = {isa = PBXBuildFile; fileRef = 2189E8050A10653700E354DF /* JCGraphView.h */; };
+		0BBB6C810A2230EB00A2B25E /* JCGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2189E8060A10653700E354DF /* JCGraphView.m */; };
+		0BBB6C820A2230F500A2B25E /* CCExpert.h in Sources */ = {isa = PBXBuildFile; fileRef = 213293930A0EB0F40097814E /* CCExpert.h */; };
+		0BBB6C830A2230F500A2B25E /* CCExpert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 213293940A0EB0F40097814E /* CCExpert.cpp */; };
+		0BBB6C840A2230F500A2B25E /* CCPitchFinder.h in Sources */ = {isa = PBXBuildFile; fileRef = 2169A7810A154E63009E6FCF /* CCPitchFinder.h */; };
+		0BBB6C850A2230F500A2B25E /* CCPitchFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2169A7800A154E63009E6FCF /* CCPitchFinder.cpp */; };
+		0BBB6C860A2230F500A2B25E /* CCTempoFinder.h in Sources */ = {isa = PBXBuildFile; fileRef = 213293A00A0EB6550097814E /* CCTempoFinder.h */; };
+		0BBB6C870A2230F500A2B25E /* CCTempoFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 213293A10A0EB6550097814E /* CCTempoFinder.cpp */; };
+		0BBB6C880A2230F500A2B25E /* CCFeatures.h in Sources */ = {isa = PBXBuildFile; fileRef = 213293A40A0EB7530097814E /* CCFeatures.h */; };
+		0BBB6C890A2230F500A2B25E /* CCFeatures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 213293A50A0EB7530097814E /* CCFeatures.cpp */; };
+		0BBB6C8A0A2230F500A2B25E /* CCTranscriptionEngine.h in Sources */ = {isa = PBXBuildFile; fileRef = 213294100A0ECB790097814E /* CCTranscriptionEngine.h */; };
+		0BBB6C8B0A2230F500A2B25E /* CCTranscriptionEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 213294110A0ECB790097814E /* CCTranscriptionEngine.cpp */; };
+		0BBB6C8C0A2230FF00A2B25E /* CCTranscriber_Prefix.pch in Sources */ = {isa = PBXBuildFile; fileRef = 32CA4F630368D1EE00C91783 /* CCTranscriber_Prefix.pch */; };
+		0BBB6C8D0A2230FF00A2B25E /* CControllerAndBridge.h in Sources */ = {isa = PBXBuildFile; fileRef = 2132946B0A0EE5D10097814E /* CControllerAndBridge.h */; };
+		0BBB6C8E0A2230FF00A2B25E /* CControllerAndBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2132946A0A0EE5D10097814E /* CControllerAndBridge.mm */; };
+		0BBB6C8F0A2230FF00A2B25E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		0BBB6C900A2230FF00A2B25E /* CCore.h in Sources */ = {isa = PBXBuildFile; fileRef = 2132960C0A0F1B410097814E /* CCore.h */; };
+		0BBB6C910A2230FF00A2B25E /* CCFFTer.h in Sources */ = {isa = PBXBuildFile; fileRef = 2158BBD30A155D2400F0F5B3 /* CCFFTer.h */; };
+		0BBB6C920A2230FF00A2B25E /* CCFFTer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2158BBD40A155D2400F0F5B3 /* CCFFTer.cpp */; };
+		0BBB6C930A2230FF00A2B25E /* CCFilter.h in Sources */ = {isa = PBXBuildFile; fileRef = 0BEEF1B20A1CF9F10083EBB3 /* CCFilter.h */; };
+		0BBB6C940A2230FF00A2B25E /* CCFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BEEF1B30A1CF9F10083EBB3 /* CCFilter.cpp */; };
+		0BBB6C950A2230FF00A2B25E /* CCGlobals.h in Sources */ = {isa = PBXBuildFile; fileRef = 21EEACE00A185ED900A09BD3 /* CCGlobals.h */; };
+		213296810A0F25670097814E /* libsndfile.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 213296800A0F25670097814E /* libsndfile.dylib */; };
+		2158BBDB0A15648E00F0F5B3 /* libfftw3f.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2158BBDA0A15648E00F0F5B3 /* libfftw3f.a */; };
+		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0B3A804E0A3E39A6005DAA52 /* neuron.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = neuron.cc; sourceTree = "<group>"; };
+		0B3A804F0A3E39A6005DAA52 /* neuron.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = neuron.h; sourceTree = "<group>"; };
+		0B3A80500A3E39A6005DAA52 /* nnwork.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = nnwork.cc; sourceTree = "<group>"; };
+		0B3A80510A3E39A6005DAA52 /* nnwork.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = nnwork.h; sourceTree = "<group>"; };
+		0B3A80520A3E39A6005DAA52 /* Peak.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Peak.cpp; sourceTree = "<group>"; };
+		0B3A80530A3E39A6005DAA52 /* Peak.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Peak.h; sourceTree = "<group>"; };
+		0B3A80570A3E3A13005DAA52 /* CChordFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CChordFinder.h; sourceTree = "<group>"; };
+		0B3A80580A3E3A13005DAA52 /* CChordFinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CChordFinder.cpp; sourceTree = "<group>"; };
+		0B542E590A3F031700BAC71E /* CCSegmentFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSegmentFinder.h; sourceTree = "<group>"; };
+		0B542E5A0A3F031700BAC71E /* CCSegmentFinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCSegmentFinder.cpp; sourceTree = "<group>"; };
+		0BBB6C220A222CE300A2B25E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
+		0BBB6C240A222CF600A2B25E /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		0BBB6C260A222D0400A2B25E /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = /System/Library/Frameworks/AudioUnit.framework; sourceTree = "<absolute>"; };
+		0BEEF1B20A1CF9F10083EBB3 /* CCFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCFilter.h; sourceTree = "<group>"; };
+		0BEEF1B30A1CF9F10083EBB3 /* CCFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCFilter.cpp; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		213293930A0EB0F40097814E /* CCExpert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCExpert.h; sourceTree = "<group>"; };
+		213293940A0EB0F40097814E /* CCExpert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCExpert.cpp; sourceTree = "<group>"; };
+		213293A00A0EB6550097814E /* CCTempoFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTempoFinder.h; sourceTree = "<group>"; };
+		213293A10A0EB6550097814E /* CCTempoFinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCTempoFinder.cpp; sourceTree = "<group>"; };
+		213293A40A0EB7530097814E /* CCFeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCFeatures.h; sourceTree = "<group>"; };
+		213293A50A0EB7530097814E /* CCFeatures.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCFeatures.cpp; sourceTree = "<group>"; };
+		213294100A0ECB790097814E /* CCTranscriptionEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTranscriptionEngine.h; sourceTree = "<group>"; };
+		213294110A0ECB790097814E /* CCTranscriptionEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCTranscriptionEngine.cpp; sourceTree = "<group>"; };
+		2132946A0A0EE5D10097814E /* CControllerAndBridge.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = CControllerAndBridge.mm; sourceTree = "<group>"; };
+		2132946B0A0EE5D10097814E /* CControllerAndBridge.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CControllerAndBridge.h; sourceTree = "<group>"; };
+		2132960C0A0F1B410097814E /* CCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCore.h; sourceTree = "<group>"; };
+		213296800A0F25670097814E /* libsndfile.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsndfile.dylib; path = /usr/local/lib/libsndfile.dylib; sourceTree = "<absolute>"; };
+		2158BBD30A155D2400F0F5B3 /* CCFFTer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCFFTer.h; sourceTree = "<group>"; };
+		2158BBD40A155D2400F0F5B3 /* CCFFTer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCFFTer.cpp; sourceTree = "<group>"; };
+		2158BBDA0A15648E00F0F5B3 /* libfftw3f.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3f.a; path = /usr/local/lib/libfftw3f.a; sourceTree = "<absolute>"; };
+		2161F1980A110E9E0025062F /* JCWaveformView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = JCWaveformView.h; sourceTree = "<group>"; };
+		2161F1990A110E9E0025062F /* JCWaveformView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = JCWaveformView.m; sourceTree = "<group>"; };
+		2161F3EF0A11CC310025062F /* JCSpectrumView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = JCSpectrumView.h; sourceTree = "<group>"; };
+		2161F3F00A11CC310025062F /* JCSpectrumView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = JCSpectrumView.m; sourceTree = "<group>"; };
+		2169A7800A154E63009E6FCF /* CCPitchFinder.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = CCPitchFinder.cpp; sourceTree = "<group>"; };
+		2169A7810A154E63009E6FCF /* CCPitchFinder.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CCPitchFinder.h; sourceTree = "<group>"; };
+		2189E8050A10653700E354DF /* JCGraphView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = JCGraphView.h; sourceTree = "<group>"; };
+		2189E8060A10653700E354DF /* JCGraphView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = JCGraphView.m; sourceTree = "<group>"; };
+		21D17AF60A1A2DD3006726AE /* CCLabelsView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CCLabelsView.h; sourceTree = "<group>"; };
+		21D17AF70A1A2DD3006726AE /* CCLabelsView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CCLabelsView.m; sourceTree = "<group>"; };
+		21EEACE00A185ED900A09BD3 /* CCGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGlobals.h; sourceTree = "<group>"; };
+		21F2B62F0A10809700772A0C /* JCFullScreenWindow.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = JCFullScreenWindow.h; sourceTree = "<group>"; };
+		21F2B6300A10809800772A0C /* JCFullScreenWindow.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = JCFullScreenWindow.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* CCTranscriber_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTranscriber_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* CCTranscriber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCTranscriber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				213296810A0F25670097814E /* libsndfile.dylib in Frameworks */,
+				2158BBDB0A15648E00F0F5B3 /* libfftw3f.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				213293930A0EB0F40097814E /* CCExpert.h */,
+				213293940A0EB0F40097814E /* CCExpert.cpp */,
+				0B3A80570A3E3A13005DAA52 /* CChordFinder.h */,
+				0B3A80580A3E3A13005DAA52 /* CChordFinder.cpp */,
+				2169A7810A154E63009E6FCF /* CCPitchFinder.h */,
+				2169A7800A154E63009E6FCF /* CCPitchFinder.cpp */,
+				213293A00A0EB6550097814E /* CCTempoFinder.h */,
+				213293A10A0EB6550097814E /* CCTempoFinder.cpp */,
+				213294100A0ECB790097814E /* CCTranscriptionEngine.h */,
+				213294110A0ECB790097814E /* CCTranscriptionEngine.cpp */,
+				0B542E590A3F031700BAC71E /* CCSegmentFinder.h */,
+				0B542E5A0A3F031700BAC71E /* CCSegmentFinder.cpp */,
+				213293A40A0EB7530097814E /* CCFeatures.h */,
+				213293A50A0EB7530097814E /* CCFeatures.cpp */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		0B3A804D0A3E3972005DAA52 /* Neural Net */ = {
+			isa = PBXGroup;
+			children = (
+				0B3A804E0A3E39A6005DAA52 /* neuron.cc */,
+				0B3A804F0A3E39A6005DAA52 /* neuron.h */,
+				0B3A80500A3E39A6005DAA52 /* nnwork.cc */,
+				0B3A80510A3E39A6005DAA52 /* nnwork.h */,
+				0B3A80520A3E39A6005DAA52 /* Peak.cpp */,
+				0B3A80530A3E39A6005DAA52 /* Peak.h */,
+			);
+			name = "Neural Net";
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BBB6C260A222D0400A2B25E /* AudioUnit.framework */,
+				0BBB6C240A222CF600A2B25E /* CoreServices.framework */,
+				0BBB6C220A222CE300A2B25E /* AudioToolbox.framework */,
+				2158BBDA0A15648E00F0F5B3 /* libfftw3f.a */,
+				213296800A0F25670097814E /* libsndfile.dylib */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* CCTranscriber.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2189E6060A10119C00E354DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				21D17AF60A1A2DD3006726AE /* CCLabelsView.h */,
+				21D17AF70A1A2DD3006726AE /* CCLabelsView.m */,
+				2161F3EF0A11CC310025062F /* JCSpectrumView.h */,
+				2161F3F00A11CC310025062F /* JCSpectrumView.m */,
+				2161F1980A110E9E0025062F /* JCWaveformView.h */,
+				2161F1990A110E9E0025062F /* JCWaveformView.m */,
+				21F2B62F0A10809700772A0C /* JCFullScreenWindow.h */,
+				21F2B6300A10809800772A0C /* JCFullScreenWindow.m */,
+				2189E8050A10653700E354DF /* JCGraphView.h */,
+				2189E8060A10653700E354DF /* JCGraphView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CCTranscriber */ = {
+			isa = PBXGroup;
+			children = (
+				0B3A804D0A3E3972005DAA52 /* Neural Net */,
+				2189E6060A10119C00E354DF /* Views */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CCTranscriber;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				32CA4F630368D1EE00C91783 /* CCTranscriber_Prefix.pch */,
+				2132946B0A0EE5D10097814E /* CControllerAndBridge.h */,
+				2132946A0A0EE5D10097814E /* CControllerAndBridge.mm */,
+				2132960C0A0F1B410097814E /* CCore.h */,
+				2158BBD30A155D2400F0F5B3 /* CCFFTer.h */,
+				2158BBD40A155D2400F0F5B3 /* CCFFTer.cpp */,
+				0BEEF1B20A1CF9F10083EBB3 /* CCFilter.h */,
+				0BEEF1B30A1CF9F10083EBB3 /* CCFilter.cpp */,
+				21EEACE00A185ED900A09BD3 /* CCGlobals.h */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* CCTranscriber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "CCTranscriber" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CCTranscriber;
+			productInstallPath = "$(HOME)/Applications";
+			productName = CCTranscriber;
+			productReference = 8D1107320486CEB800E47090 /* CCTranscriber.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CCTranscriber" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CCTranscriber */;
+			projectDirPath = "";
+			targets = (
+				8D1107260486CEB800E47090 /* CCTranscriber */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BBB6C780A2230EB00A2B25E /* CCLabelsView.h in Sources */,
+				0BBB6C790A2230EB00A2B25E /* CCLabelsView.m in Sources */,
+				0BBB6C7A0A2230EB00A2B25E /* JCSpectrumView.h in Sources */,
+				0BBB6C7B0A2230EB00A2B25E /* JCSpectrumView.m in Sources */,
+				0BBB6C7C0A2230EB00A2B25E /* JCWaveformView.h in Sources */,
+				0BBB6C7D0A2230EB00A2B25E /* JCWaveformView.m in Sources */,
+				0BBB6C7E0A2230EB00A2B25E /* JCFullScreenWindow.h in Sources */,
+				0BBB6C7F0A2230EB00A2B25E /* JCFullScreenWindow.m in Sources */,
+				0BBB6C800A2230EB00A2B25E /* JCGraphView.h in Sources */,
+				0BBB6C810A2230EB00A2B25E /* JCGraphView.m in Sources */,
+				0BBB6C820A2230F500A2B25E /* CCExpert.h in Sources */,
+				0BBB6C830A2230F500A2B25E /* CCExpert.cpp in Sources */,
+				0BBB6C840A2230F500A2B25E /* CCPitchFinder.h in Sources */,
+				0BBB6C850A2230F500A2B25E /* CCPitchFinder.cpp in Sources */,
+				0BBB6C860A2230F500A2B25E /* CCTempoFinder.h in Sources */,
+				0BBB6C870A2230F500A2B25E /* CCTempoFinder.cpp in Sources */,
+				0BBB6C880A2230F500A2B25E /* CCFeatures.h in Sources */,
+				0BBB6C890A2230F500A2B25E /* CCFeatures.cpp in Sources */,
+				0BBB6C8A0A2230F500A2B25E /* CCTranscriptionEngine.h in Sources */,
+				0BBB6C8B0A2230F500A2B25E /* CCTranscriptionEngine.cpp in Sources */,
+				0BBB6C8C0A2230FF00A2B25E /* CCTranscriber_Prefix.pch in Sources */,
+				0BBB6C8D0A2230FF00A2B25E /* CControllerAndBridge.h in Sources */,
+				0BBB6C8E0A2230FF00A2B25E /* CControllerAndBridge.mm in Sources */,
+				0BBB6C8F0A2230FF00A2B25E /* main.m in Sources */,
+				0BBB6C900A2230FF00A2B25E /* CCore.h in Sources */,
+				0BBB6C910A2230FF00A2B25E /* CCFFTer.h in Sources */,
+				0BBB6C920A2230FF00A2B25E /* CCFFTer.cpp in Sources */,
+				0BBB6C930A2230FF00A2B25E /* CCFilter.h in Sources */,
+				0BBB6C940A2230FF00A2B25E /* CCFilter.cpp in Sources */,
+				0BBB6C950A2230FF00A2B25E /* CCGlobals.h in Sources */,
+				0B3A80540A3E39A6005DAA52 /* neuron.cc in Sources */,
+				0B3A80550A3E39A6005DAA52 /* nnwork.cc in Sources */,
+				0B3A806C0A3E3B7A005DAA52 /* Peak.h in Sources */,
+				0B3A80560A3E39A6005DAA52 /* Peak.cpp in Sources */,
+				0B3A806D0A3E3B9A005DAA52 /* CChordFinder.h in Sources */,
+				0B3A80590A3E3A13005DAA52 /* CChordFinder.cpp in Sources */,
+				0B542E5C0A3F034B00BAC71E /* CCSegmentFinder.h in Sources */,
+				0B542E5B0A3F031700BAC71E /* CCSegmentFinder.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = CCTranscriber;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = CCTranscriber;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					"$(LIBRARY_SEARCH_PATHS)",
+				);
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				USER_HEADER_SEARCH_PATHS = /usr/local/include/;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					"$(LIBRARY_SEARCH_PATHS)",
+				);
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				USER_HEADER_SEARCH_PATHS = /usr/local/include/;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "CCTranscriber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CCTranscriber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
